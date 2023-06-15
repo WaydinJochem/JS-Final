@@ -234,9 +234,15 @@ body {
     border-radius: 50%;
     /* do media query*/
   }
-  .links {
-   text-align: center;
+  #conditions {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    margin-left: 5%;
   }
+  .links {
+    text-align: center;
+   }
   /* Footer End */
   
   /* Home Page End */
