@@ -115,175 +115,179 @@ body {
 /* Navigation Bar End */
 /* Card Js-Populated Start */
 #added {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 3%;
-  }
-  /* checkout card */
-  .card {
-    color: silver;
-    background-image: radial-gradient(purple, black);
-    border-radius: 3%;
-    box-shadow: 0 20px 20px #03001e;
-    margin: 5%;
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .card-title {
-    margin-top: 20px;
-  }
-  .card-text {
-    text-align: center;
-  }
-  
-  .card-img {
-    border-radius: 50px;
-    width: 50%;
-    height: 100px;
-  }
-  
-  /* images on Main Start */
-  #pro-img-1:hover {
-    content: url("https://i.postimg.cc/4dNG3Sfc/6bbb8206e603b767125f7f6465476fee.gif");
-  }
-  
-  #pro-img-2:hover {
-    content: url("https://i.postimg.cc/kXS4VT50/stanislav-mikhailov-unigungif02.gif");
-  }
-  
-  #pro-img-3:hover {
-    content: url("https://i.postimg.cc/8kWC0sKf/79fe6d857d70d8dea4748bbe11bb15c3.gif");
-  }
-  
-  #pro-img-4:hover {
-    content: url("https://i.postimg.cc/6qnBsNjr/9e75b0fbdd1621ef344e5b75cdd574ae.gif");
-  }
-  
-  /* Images on Main End */
-  #promo {
-    text-align: center;
-    margin: 2%;
-    font-size: xx-large;
-  }
-  
-  /* Card Js-populated End */
-  
-  /* Main Section Start */
-  #first-view {
-    background-image: url("https://i.postimg.cc/rpdqdL5C/istockphoto-1205603080-612x612.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 2%;
-    color: aliceblue;
-  }
-  
-  h1 {
-    text-align: center;
-    font-size: xxx-large;
-    text-shadow: 10px 10px #333;
-  }
-  
-  #intro {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    text-align: center;
-    margin: 5%;
-  }
-  
-  button {
-    padding: 1%;
-    box-shadow: 1px 1px #ddd;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
-    text-transform: uppercase;
-  }
-  
-  button a {
-    text-decoration: none;
-    font-size: medium;
-    font-weight: bolder;
-    color: #111;
-  }
-  
-  button:hover {
-    background-color: silver;
-    box-shadow: 2px 2px silver;
-  }
-  /* Main Section End */
-  
-  /* Footer Start */
-  footer {
-    background-color: rgb(59, 5, 59);
-    padding: 2%;
-  }
-  
-  .sections {
-    text-align: center;
-  }
-  #copy {
-    font-size: large;
-  }
-  .icons {
-    width: 2%;
-    border-radius: 50%;
-    /* do media query*/
-  }
-  #conditions {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    align-items: center;
-    margin-left: 5%;
-  }
-  .links {
-    text-align: center;
-   }
-  /* Footer End */
-  
-  /* Home Page End */
-  /* Modal Start */
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  /* Modal End */
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 3%;
+}
+/* checkout card */
+#products {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding: 3%;
+}
+
+.card {
+  color: silver;
+  background-image: radial-gradient(purple, black);
+  border-radius: 3%;
+  box-shadow: 0 20px 20px #03001e;
+  margin: 5%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card-title {
+  margin-top: 20px;
+}
+.card-text {
+  text-align: center;
+}
+
+.card-img {
+  border-radius: 50px;
+  width: 50%;
+  height: 100px;
+}
+
+/* images on Main Start */
+#pro-img-1:hover {
+  content: url("https://i.postimg.cc/4dNG3Sfc/6bbb8206e603b767125f7f6465476fee.gif");
+}
+
+#pro-img-2:hover {
+  content: url("https://i.postimg.cc/kXS4VT50/stanislav-mikhailov-unigungif02.gif");
+}
+
+#pro-img-3:hover {
+  content: url("https://i.postimg.cc/8kWC0sKf/79fe6d857d70d8dea4748bbe11bb15c3.gif");
+}
+
+#pro-img-4:hover {
+  content: url("https://i.postimg.cc/6qnBsNjr/9e75b0fbdd1621ef344e5b75cdd574ae.gif");
+}
+
+/* Images on Main End */
+#promo {
+  text-align: center;
+  margin: 2%;
+  font-size: xx-large;
+}
+
+/* Card Js-populated End */
+
+/* Main Section Start */
+#first-view {
+  background-image: url("https://i.postimg.cc/rpdqdL5C/istockphoto-1205603080-612x612.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 2%;
+  color: aliceblue;
+}
+
+h1 {
+  text-align: center;
+  font-size: xxx-large;
+  text-shadow: 10px 10px #333;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: center;
+  margin: 5%;
+}
+
+button {
+  padding: 1%;
+  box-shadow: 1px 1px #ddd;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  text-transform: uppercase;
+  border-radius: 25px;
+}
+
+button a {
+  text-decoration: none;
+  font-size: medium;
+  font-weight: bolder;
+  color: #111;
+}
+
+button:hover {
+  background-color: silver;
+  box-shadow: 2px 2px silver;
+}
+/* Main Section End */
+
+/* Footer Start */
+footer {
+  background-color: rgb(59, 5, 59);
+  padding: 2%;
+}
+
+.sections {
+  text-align: center;
+}
+#copy {
+  font-size: large;
+}
+.icons {
+  width: 2%;
+  border-radius: 50%;
+  /* do media query*/
+}
+#conditions {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  margin-left: 5%;
+}
+/* Footer End */
+
+/* Home Page End */
+/* Modal Start */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal End */
