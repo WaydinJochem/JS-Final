@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background Animation Start */
+body {
+  background: linear-gradient(to right, #03001e, #7303c0, #24243e);
+  animation: spinning 15s ease infinite;
+  background-size: 200% 200%;
+  background-attachment: fixed;
+  font-family: "Bruno Ace", cursive;
+}
+
+@keyframes spinning {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 150%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Background Animation End */
+#logo {
+  display: inline-block;
+  width: 8%;
+}
+
+/* Navigation Bar Start */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  opacity: 70%;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+#hover a:hover {
+  background-image: linear-gradient(white, black);
+  font-family: "Bruno Ace", cursive;
+  font-weight: bolder;
+  color: gold;
+}
+
+#hover {
+  margin-top: 20%;
+}
+
+#top {
+  display: flex;
+  position: absolute;
+  top: 0;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.closebtn:hover {
+  color: silver;
+}
+
+#logo {
+  width: 30%;
+}
+
+#logo:hover {
+  background-image: linear-gradient(white, black);
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* Home Page  Start */
+/* Navigation Bar End */
+/* Card Js-Populated Start */
+#added {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 3%;
+  }
+  /* checkout card */
+  .card {
+    color: silver;
+    background-image: radial-gradient(purple, black);
+    border-radius: 3%;
+    box-shadow: 0 20px 20px #03001e;
+    margin: 5%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .card-title {
+    margin-top: 20px;
+  }
+  .card-text {
+    text-align: center;
+  }
+  
+  .card-img {
+    border-radius: 50px;
+    width: 50%;
+    height: 100px;
+  }
+  
+  /* images on Main Start */
+  #pro-img-1:hover {
+    content: url("https://i.postimg.cc/4dNG3Sfc/6bbb8206e603b767125f7f6465476fee.gif");
+  }
+  
+  #pro-img-2:hover {
+    content: url("https://i.postimg.cc/kXS4VT50/stanislav-mikhailov-unigungif02.gif");
+  }
+  
+  #pro-img-3:hover {
+    content: url("https://i.postimg.cc/8kWC0sKf/79fe6d857d70d8dea4748bbe11bb15c3.gif");
+  }
+  
+  #pro-img-4:hover {
+    content: url("https://i.postimg.cc/6qnBsNjr/9e75b0fbdd1621ef344e5b75cdd574ae.gif");
+  }
+  
+  /* Images on Main End */
+  #promo {
+    text-align: center;
+    margin: 2%;
+    font-size: xx-large;
+  }
+  
+  /* Card Js-populated End */
+  
+  /* Main Section Start */
+  #first-view {
+    background-image: url("https://i.postimg.cc/rpdqdL5C/istockphoto-1205603080-612x612.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 2%;
+    color: aliceblue;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: xxx-large;
+    text-shadow: 10px 10px #333;
+  }
+  
+  #intro {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: center;
+    margin: 5%;
+  }
+  
+  button {
+    padding: 1%;
+    box-shadow: 1px 1px #ddd;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    text-transform: uppercase;
+  }
+  
+  button a {
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bolder;
+    color: #111;
+  }
+  
+  button:hover {
+    background-color: silver;
+    box-shadow: 2px 2px silver;
+  }
+  /* Main Section End */
+  
+  /* Footer Start */
+  footer {
+    background-color: rgb(59, 5, 59);
+    padding: 2%;
+  }
+  
+  .sections {
+    text-align: center;
+  }
+  #copy {
+    font-size: large;
+  }
+  .icons {
+    width: 2%;
+    border-radius: 50%;
+    /* do media query*/
+  }
+  .links {
+   text-align: center;
+  }
+  /* Footer End */
+  
+  /* Home Page End */
+  /* Modal Start */
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Modal End */
