@@ -175,10 +175,9 @@ function updateCart() {
   cart.forEach((product, index) => {
     const cartItem = document.createElement("div");
     cartItem.innerHTML = `
-    <img src="${product.image}">
+    <img src="${product.image}" class="product-img">
       <span>${product.name}</span>
       <span>${product.price}</span>
-      <p>Total $ ${product.price}</p>
       <button onclick="removeFromCart(${index})" class="rembutton">&#x1F5D1;</button>
     `;
     cartContainer.appendChild(cartItem);

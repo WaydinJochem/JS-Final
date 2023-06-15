@@ -308,7 +308,9 @@ h3 {
     text-decoration: none;
     cursor: pointer;
   }
-  
+  .product-img {
+    width: 50%;
+  }
   /* Modal End */
   /* Contact Page Start */
  #contact {
