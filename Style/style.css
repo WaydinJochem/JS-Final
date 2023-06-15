@@ -113,6 +113,22 @@ body {
 
 /* Home Page  Start */
 /* Navigation Bar End */
+/* About Page Start */
+h3 {
+  text-align: center;
+}
+#liscence {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+  margin: 10px;
+  margin-left: 10%;
+}
+.li-img {
+  width: 50%;
+  height: 50vh;
+}
+/* About Page End */
 /* Card Js-Populated Start */
 #added {
     display: grid;
